@@ -12,7 +12,7 @@ apt-get update \
     cmake
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source $HOME/.cargo/env
-apt-get install screen
+apt-get install -y screen
 rm -r sui
 git clone https://github.com/PurelandToday/sui.git
 cd sui
