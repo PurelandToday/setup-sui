@@ -21,3 +21,5 @@ git fetch upstream
 git checkout --track upstream/devnet
 cp crates/sui-config/data/fullnode-template.yaml fullnode.yaml
 curl -fLJO https://github.com/MystenLabs/sui-genesis/raw/main/devnet/genesis.blob
+cd sui
+cargo run --release --bin sui-node -- --config-path fullnode.yaml
