@@ -10,6 +10,9 @@ apt-get update \
     pkg-config \
     libclang-dev \
     cmake
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+source $HOME/.cargo/env
+apt-get install screen
 rm -r sui
 git clone https://github.com/PurelandToday/sui.git
 cd sui
